@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <head>
+    <title>Survey-Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description"></p>
+    <form id="survey-form">
+      <label id="name-label">name<input required type="text" id="name" placeholder="please enter name" /></label>
+      <label id="email-label">email<input required type="email" id="email" pattern=".+@example\.com" placeholder="please enter email" /></label>
+      <label id="number-label">age<input type="number" id="number" min="1" max="100" placeholder="please enter number" /></label>
+      <label id="drink">choose a drink</label>
+      <select>
+        <option id="default">please choose a drink</option>
+        <option id="milk">milk</option>
+        <option id="lemonade">lemonade</option>
+        <option id="water">water</option>
+      </select>
+      <label>Choose your gender</label>
+      <input type="radio" name="gender" />female <input type="radio" name="gender" />male
+      <label>choose days you are shop for drinks:</label>
+      <input type="checkbox" value="sunday" />Sunday <input type="checkbox" value="monday" />Monday <input type="checkbox" value="tuesday" />Tuesday
+      <input type="checkbox" value="wednesday" />Wednesday <input type="checkbox" value="thursday" />Thursday <input type="checkbox" value="friday" />Friday
+      <input type="checkbox" value="saturday" />Saturday
+
+      <label id="paragraph-label">Explain what you believe are "healthy" drinks</label>
+      <textarea id="paragraph">I believe these drinks are drinks...</textarea>
+      <button id="submit" type="submit">submit</button>
+    </form>
+  </body>
+</html>
